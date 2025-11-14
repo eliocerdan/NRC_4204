@@ -1,0 +1,266 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.topheader {
+  position fixed;
+  background-color: green;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.Menu-Horizontal {
+list-style: none;
+display: flex;
+justify-content: space-around;
+width: 100%;
+}
+.Menu-Horizontal li a{
+  padding: 15px 20px;
+  display: Block;
+  color:white;
+  text-decoration: none;
+}
+.Menu-Vertical {
+  list-style: none;
+  display: none;
+  width: 150px;
+  padding: 0;
+  position: absolute;
+  background-color: green;
+}
+
+.Menu-Horizontal li a:hover{
+color: red;
+
+}
+.Menu-Horizontal li:hover .Menu-Vertical{
+  display: Block;
+}
+/*SECCION PRODUCTOS*/
+.seccion-productos{
+  padding: 60px 20px;
+  background-color: white;
+}
+
+.div-gral-productos{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+}
+.div-prod-text {
+  flex 1;
+}
+.div-prod-text h2{
+  color: blue;
+}
+.div-prod-text p{
+  color: grey;
+  line-height: 1.6;
+  font-size: 15px;
+  text-align: justify;
+}
+.div-prod-text button{
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: blue;
+  color: black;
+  border: none;
+  border-radius: 5px;
+}
+
+.div-prod-text button a {
+  text-decoration: none;
+}
+.div-prod-text button a:hover {
+  text-decoration: none;
+  color: dark;
+}
+
+.div-prod-img{
+  flex: 1;
+}
+.div-prod-img img{
+  width: 100%;
+  max-width: 500px;
+}
+
+/*Seccion APRENDE*/
+.seccion-zona {
+  padding:60px 20px;
+  background-color: white;
+}
+.div-gral-zona{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+}
+.div-zn-text{
+  flex: 1;
+}
+.div-zn-text h2{
+  color: red;
+}
+.div-zn-text p{
+  color: grey;
+  line-height: 1.6;
+  font-size: 15px;
+  text-align: justify;
+}
+.div-zn-video{
+  flex: 1;
+}
+.div-zn-video iframe{
+  width: 100%;
+  max-width: 500px;
+}
+
+
+/*SECCION FORMULARIO*/
+.seccion-formulario{
+  background-attachment: green;
+  padding: 40px;
+  border: 3px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.div-cont-formulario{
+  background-color: green;
+  padding: 30px;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+}
+.campo {
+  background-color: lightgreen;
+  padding: 15px;
+  border: 1px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.formulario-registro label{
+  display: block;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: darkgoldenrod;
+}
+.formulario-registro input[type="text"],
+
+.formulario-registro select{
+  width: 100%;
+  padding: 1%;
+  border: 1px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.formulario-registro .lista-radio, .formulario-registro .lista-checkbox{
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  border: 1px;
+  background-color:rgb(195, 248, 195);
+  border-radius: 1px;
+}
+.formulario-registro button{
+  background-color: rgb(250, 62, 62);
+  color: black;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Footer general */
+.footer {
+  background-color: #222; /* Fondo oscuro para contraste */
+  color: white;
+  padding: 2rem 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Contenedor flexible para 3 columnas */
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  gap: 2rem;
+}
+
+/* Marca o logotipo */
+.footer-brand {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-logo {
+  width: 60px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+/* Enlaces legales */
+.footer-links {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-links a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  margin: 0.3rem 0;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+/* Redes sociales con íconos */
+.footer-social {
+  flex: 1;
+  min-width: 200px;
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 0.5rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-social img {
+    margin-bottom: 0.5rem;
+  }
+}

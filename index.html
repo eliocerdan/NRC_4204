@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Mi Starbucks</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="pie.css" />
+  </head>
+  <body>
+    <nav class="topheader">
+      <a href="" class="logo">
+        <img 
+          width="100" 
+          height="70" 
+          src="imgs1/starbuckslogo.png" 
+          alt="" 
+        />
+      </a>
+      <ul class="Menu-Horizontal">
+        <li><a href="">¿Quiénes somos?</a></li>
+        <li><a href="">Productos</a></li>
+        <li>
+          <a href="">Promociones</a>
+          <ul class="Menu-Vertical">
+            <li><a href="">Tarjeta de Crédito</a></li>
+            <li><a href="">Tarjeta de Débito</a></li>
+            <li><a href="">Beneficios por compras</a></li>
+            <li><a href="">Plin</a></li>
+          </ul>
+        </li>
+        <li><a href="">Zona Digital</a></li>
+        <li><a href="#contactanos">Contactanos</a></li>
+      </ul>
+    </nav>
+              <!-- SECCION PRODUCTOS -->
+    <section class  ="seccion-productos">
+      <div class = "div-gral-productos">
+        <div class="div-prod-text">
+        <h2> Seccion Productos</h2>
+        <p> Nuestras bebidas son hechas con café 100% puro, y nuestros empleados te lo preparan con el mejor cariño del mundo.
+        <button> <a href=""> Mas info</a> </button>
+        </div>
+        <div class="div-prod-img">
+        <img src="imgs1/cafeteriaStarbucks.jpg">
+      </div>
+    </section>
+            <!-- ZONA DIGITAL -->
+    <section class  ="seccion-zona">
+      <div class = "div-gral-zona">
+        <div class= "div-zn-text">
+          <h2> Seccion zona digital </h2>
+          <p> Starbucks comenzó como una sola tienda en el mercado Pike Place de Seattle, vendiendo granos de café y té. La visión de Howard Schultz de transformar la experiencia del café, inspirada en las cafeterías italianas, fue clave para la expansión. </p>
+          </div>
+          <div class="div-zn-video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Vd8P8ogEmOk?si=X89bvvFbiC_8DHI1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+        <section class="seccion-formulario"> 
+          <div class="div-cont-formulario">
+          <h2> Formulario de Registro</h2>
+          <p>Complete todos los campos...</p>
+          <form class="formulario-registro" id ="contactanos">
+            <!--INPUT:TEXT-->
+            <div class="campo">
+              <label for="Nombres">Nombres Completos </label>
+              <input type="text" id="nombre" name="nombre" placeholder="Ingrese sus nombres"> </input>
+              </div>
+            <!--LISTA DESPLEGABLE-->
+            <div class="campo">
+            <label for ="Nombres">Pais</label>
+            <select id="pais" name="pais">
+            <option value="">Seleccione un Pais</option>
+            <option value="peru">Peru</option>
+            <option value="colombia">Colombia</option>
+            <option value="pargentina">Argentina</option>
+            <option value="mexico">Mexico</option>
+            </select>
+            </div>
+            <!--CHECKBOX-->
+            <div class="campo">
+            <label>Intereses: </label>
+            <ul class ="lista-checkbox">
+              <li><label><input type="checkbox" name="intereses" value="Bebidas Frías">Bebidas Frías</input> </label> </li>
+              <li><label><input type="checkbox" name="intereses" value="Bebidas Calientes">Bebidas Calientes</input> </label> </li>
+              <li><label><input type="checkbox" name="intereses" value="Sandwiches">Sandwiches</input> </label> </li>
+              <li><label><input type="checkbox" name="intereses" value="Muffins">Muffins</input> </label> </li>
+            </ul>
+            </div>
+            <!--RADIO-->
+            <div class="campo">
+              <label>Genero: </label>
+              <ul class ="lista-radio">
+                <li><label><input type="radio" name="Genero" value="Masculino">Masculino</input> </label> </li>
+                <li><label><input type="radio" name="Genero" value="Femenino">Femenino</input> </label> </li>
+                </ul>
+              </div>
+              <button type="submit">Enviar</button>
+          </form>
+          </div>
+        </section>
+        <!-- PIE DE PAGINA -->
+
+    <section id="footer">
+      <footer class="footer">
+        <div class="footer-container">
+          <!-- Logo y nombre de sitio -->
+          <div class="footer-brand">
+            <img
+              src="Imagenes/senati-logo.png"
+              alt="Logo"
+              class="footer-logo"
+            />
+            <p>SENATI</p>
+            <small>© 2025 Todos los derechos reservados</small>
+          </div>
+
+          <!-- Enlaces legales -->
+          <div class="footer-links">
+            <h4>Legal</h4>
+            <a href="/Documentos/3.politica-privacidad.pdf"
+              >Política de Privacidad</a
+            >
+            <!-- Dentro de href llama a un documento pdf con la poltica-->
+            <a href="#">Términos y Condiciones</a>
+            <!-- Dentro de href llama a un documento pdf con los terminos y condiciones-->
+            <a href="/imgs1/proteccionDatos.pdf">Protección de Datos</a>
+          </div>
+
+          <!-- Redes sociales con íconos personalizados -->
+          <div class="footer-social">
+            <h4>Síguenos</h4>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+                alt="Facebook"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
+                alt="Instagram"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+                alt="LinkedIn"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145806.png"
+                alt="Twitter"
+                class="social-icon"
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>
